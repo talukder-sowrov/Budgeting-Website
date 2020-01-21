@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <script data-main="./main.js" src="./library/require.js"></script>
+        <title> Budgeting App</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="mainTitle" class="title">Budget Application</h1>
+            <ol class="textBorder descriptionDesign">
+                <div style="text-align: center">How to use this budgeting application:</div>
+                <li>Select the Type of Income or Expense for Budget</li>
+                <li>Enter all information into the box below.</li>
+                <li>Click Enter and see information on your budgeting and where you can improve.</li>
+            </ol>
+        </div>
+        <div>
+            <form>
+                <div id="typeSelectBox">
+                    <select id="typeSelect" name="type">
+                        <option value="null">Select a Money Type</option>
+                        <option value="Income">Income</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Expenditures">Expenditures</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <table id="Income" class="formDisplay toggle">
+            <tr>
+                <td class="descColumn">
+                    <p id="incomeDesc">
+                        Income is how much money you earn from something like a job or an investment. Having
+                        enough income for your lifestyle is key when attempting to budget your money.
+                    </p>
+                </td>
+                <td class="inputColumn">
+                    <div id="incomeForm">
+                        <form>
+                            <label for="incomeType">Income Name: </label>
+                            <input type="text" id="incomeType">
+                            <label for="monthlyIncome">Monthly Income: </label>
+                            <input type="number" id="monthlyIncome" min="0" step="5">
+                            <label for="monthlyInvestmentIncome">Monthly Investment Income: </label>
+                            <input type="number" id="monthlyInvestmentIncome" min="0" step="5">
+                        </form>
+                    </div>
+                    <div class="sendInfo">
+                        <button type="button" class="submit">Add Information</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table id="Savings" class="formDisplay toggle">
+            <tr>
+                <td class="descColumn">
+                    <p id="savingsDesc">
+                        Savings is one of the most important parts of budgeting. Savings allow a person
+                        to have enough money in case they face unexpected costs in the future.  It is important
+                        for people budgeting to have a consistent flow of money towards their savings so that they
+                        have money when they are in great need.
+                    </p>
+                </td>
+                <td class="inputColumn">
+                    <div id="savingsForm">
+                        <form>
+                            <label for="savingsBank">Savings in Bank: </label>
+                            <input type="number" id="savingsBank" class="info" min="0" step="5">
+                            <label for="incomeSentFlat">Income Sent: </label>
+                            <input type="number" id="incomeSentFlat" class="info" min="0" step="5">
+                        </form>
+                        <div class="sendInfo">
+                            <button type="button" class="submit">Add Information</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table id="Expenditures" class="formDisplay toggle">
+            <tr>
+                <td class="descColumn">
+                    <p id="expendituresDesc">
+                        Necessities are an important part of living a stable life.  Having a set amount of money 
+                        decided for buying necessities prevents a person from overspending on food and clothing that they
+                        didn't initially plan for. While it is important to also have money to buy nicer clothing, having
+                        a baseline for necessities is important when trying to budget money.
+                    </p>
+                </td>
+                <td class="inputColumn">
+                    <div id="expendituresForm">
+                        <form>
+                            <label for="expendituresType">Expenditure Type: </label>
+                            <input type="text" class="info" id="expendituresType">
+                            <label for="expendituresInput">Cost of Necessities per Month: </label>
+                            <input type="number" id="expendituresInput" class="info" min="0" step="5">
+                        </form>
+                    </div>
+                    <div class="sendInfo">
+                        <button type="button" class="submit">Add Information</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="textBox">
+            <textarea name="budgetDisplay" id="budgetInfo" readonly></textarea>
+        </div>
+        <div class="removeOneLine">
+            <button type="button" class="remove">Click to Remove Last Inputted Data</button>
+        </div>
+    </body>
+</html>

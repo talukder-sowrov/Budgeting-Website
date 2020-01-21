@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+
+#mainTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900; 
+    font-size: 70px;
+}
+
+#typeSelectBox {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    background-color: #00FFFF;
+}
+
+#typeSelect {
+    text-align: center;
+    font-size: 14pt;
+    height: 30px;
+    background-color: #69BF6F;
+    font-weight: 800;
+}
+
+option {
+    background-color:#abdca7;
+    font-weight: 600;
+}
+
+.textBorder {
+    border-style: solid;
+    border-width: 3px;
+}
+
+.descriptionDesign {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+#incomeSentTypeStyle {
+    font-size: 10pt;
+    width: 110px;
+    background-color: #69BF6F;
+    font-weight: 800;
+}
+
+label, #incomeSentLabel {
+    font-family: 'Fira Sans', sans-serif;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 150px;
+    padding: 5px;
+    border-color: black;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14pt;
+}
+
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14pt;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+table {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descColumn {
+    vertical-align: top;
+    width: 400px;
+}
+
+.inputColumn {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.sendInfo {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.submit {
+    background-color: purple;
+    color: white;
+}
+
+textarea {
+    border: 1.5px solid black;
+    width: 700px;
+    height: 100px;
+}
+
+.textBox {
+    text-align: center; 
+    padding-top: 15px;
+}
+
+.formDisplay {
+    display: none;
+}
+
+.removeOneLine {
+    text-align: center;
+}
+
+.remove {
+    background-color: white;
+    color: black;
+    border-color: red;
+    font-weight: bold;
+    width: 200px;
+}
+
+.remove:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.2s;
+}
